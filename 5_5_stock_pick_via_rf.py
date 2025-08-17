@@ -80,7 +80,7 @@ def get_predictions():
 
 
 # --- App Title & Main Interface ---
-st.title('📈 NIFTY 50 Stock Prediction App')
+st.title('📈 My first App')
 st.write("This app uses a Random Forest model to predict the next day's price movement for NIFTY 50 stocks. This is purely for AI education purpose, Not intended to provide any prediction suggestions")
 
 # The button to trigger the analysis
