@@ -65,7 +65,7 @@ def get_predictions():
     for i, ticker in enumerate(stock_list):
         growth = predict_stock_price_rf(ticker)
         if growth is not None:
-            predictions[ticker] = growth
+            predictions[ticker] = float(growth) if isinstance(growth, (int, float)) else growth.iloc[0] if isinstance(growth, pd.Series) else none
         # Update the progress bar
         progress_bar.progress((i + 1) / len(stock_list))
 
